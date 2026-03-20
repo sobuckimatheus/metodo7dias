@@ -188,6 +188,31 @@
     }
     h2 em { color: var(--rose); font-style: normal; }
 
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: var(--white); padding: 60px 24px; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+    .testimonial-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     /* ── STORY ── */
     .story { background: var(--warm); }
     .story p { font-size: 17px; color: var(--text); margin-bottom: 18px; }
@@ -520,6 +545,35 @@
     <a href="#comprar" class="btn-secondary" style="max-width:460px; display:block; margin:0 auto;">¡Quiero empezar hoy! →</a>
   </div>
 
+</section>
+
+
+<!-- ══════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════ -->
+<section class="testimonials">
+  <div class="container" style="max-width: 1200px;">
+    <div class="section-label">Lo que dicen nuestras mamás</div>
+    <h2>Más de <em>5.000 mamás</em> transformaron las noches de sus bebés</h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="images/depoimento1.png" alt="Testimonio de mamá sobre el método" />
+      </div>
+      <div class="testimonial-card">
+        <img src="images/depoimento2.jpg" alt="Testimonio de mamá sobre el método" />
+      </div>
+      <div class="testimonial-card">
+        <img src="images/depoimento3.jpg" alt="Testimonio de mamá sobre el método" />
+      </div>
+      <div class="testimonial-card">
+        <img src="images/depoimento4.jpg" alt="Testimonio de mamá sobre el método" />
+      </div>
+      <div class="testimonial-card">
+        <img src="images/depoimento5.jpg" alt="Testimonio de mamá sobre el método" />
+      </div>
+    </div>
+  </div>
 </section>
 
 
